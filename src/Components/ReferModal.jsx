@@ -30,7 +30,7 @@ const ReferModal = ({open, handleClose}) => {
       const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-          fetch('http://localhost:3000/referrals', {
+          fetch('https://accredian-backend-task-2q4f.onrender.com/referrals', {
             method: 'POST',
             body: JSON.stringify(form),
             headers: {
