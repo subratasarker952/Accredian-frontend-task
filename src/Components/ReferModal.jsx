@@ -30,8 +30,15 @@ const ReferModal = ({open, handleClose}) => {
       const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-          // Handle form submission
-          console.log('Form submitted:', form);
+          fetch('http://localhost:3000/referrals', {
+            method: 'POST',
+            body: JSON.stringify(form),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+            },
+          })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
         }
       };
     

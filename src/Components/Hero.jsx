@@ -1,8 +1,8 @@
 import accordina from "/accordin.png";
 const Hero = ({ onReferClick }) => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-blue-600 text-white">
-      <div className="flex md:flex-col-reverse">
+    <div className="flex py-10 md:flex-col items-center justify-center bg-blue-600 text-white">
+      <div className="flex md:flex-row flex-col-reverse">
         <div className="flex-1 flex justify-center items-center">
           <div>
             <h1 className="text-5xl font-bold mb-4">Refer & Earn</h1>
